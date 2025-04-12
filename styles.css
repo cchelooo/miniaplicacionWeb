@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #131316;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.container {
+  background-color: #1c1c21;
+  width: 40%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2f3037;
+  color: #fff;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #6a6b70;
+}
+
+button {
+  background-color: #4b4c52;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #5b5c62;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #6a6b70;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.circle.checked {
+  background-color: #5b5c62;
+  color: #fff;
+  font-size: 14px;
+  content: "✓";
+}
+
+li {
+  background-color: #26262c;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.task-text {
+  flex: 1;
+}
+
+/* Input enfocado: cambia borde blanco a color de la paleta */
+input[type="text"]:focus {
+  outline: 2px solid #4b4c52;
+}
+
+/* Botón Editar */
+#editModeBtn {
+  background-color: #2f3037;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#editModeBtn:hover {
+  background-color: #393a41;
+}
+
+/* Contenedor de input + botones */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Botón de eliminar (❌) */
+.delete-btn {
+  margin-left: 12px;
+  cursor: pointer;
+  color: #6a6b70;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #ff5c5c;
+}
